@@ -1,13 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header {
+  padding: 25px 0;
+  background-color: #212121;
+}
+
+.header__container {
+  width: 1000px;
+  margin: auto;
+}
+
+.header__wrap {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__wrap > h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.addMovies__form {
+  width: 720px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addMovies__form > input[type="text"] {
+  width: 250px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.addMovies__form > button {
+  background-color: #3ea6ff;
+  border: none;
+  outline: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+.movie {
+  margin-bottom: 30px;
+}
+
+.movie > h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie > p {
+  font-size: 18px;
 }
